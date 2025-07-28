@@ -1,0 +1,43 @@
+:root {
+    --primary: #c778dd;
+    --gray: #abb2bf;
+    --background: #282c33;
+    --white: #fff;
+    --font-family: "Fira Code", sans-serif;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #282C33;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

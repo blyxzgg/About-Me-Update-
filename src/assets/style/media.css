@@ -1,0 +1,292 @@
+@media (max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+
+    .projects__title h2::after,
+    .skills__title h2::after,
+    .aboutMe__title h2::after,
+    .contacts__title h2::after {
+        display: none;
+    }
+
+    .skills__details {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navBar__info {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 48px;
+        margin-top: 60px;
+    }
+
+    .navBar__info-content {
+        align-items: center;
+    }
+
+    .navBar__info-img-content {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    .quote {
+        padding: 0 20px;
+    }
+
+    .bottom__quote {
+        margin-right: 0;
+    }
+
+    .footer__content {
+        padding: 32px 60px;
+    }
+
+    .projects__title h2::after {
+        width: 200px;
+        right: -200px;
+    }
+
+    .projects__cards {
+        justify-content: center;
+    }
+
+    .aboutMe__precise {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .aboutMe__details,
+    .aboutMe__decor {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__content-links button {
+        display: block;
+    }
+
+    .nav__menu .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0;
+        width: 80%;
+        list-style: none;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .nav__menu .nav__list-link a {
+        font-size: 32px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .nav__footer {
+        width: 80%;
+        padding-bottom: 40px;
+    }
+
+    .nav__lang-switcher {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 60px;
+    }
+
+    .nav__socials {
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav__socials img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navBar__info-content h2,
+    .navBar__info-content span {
+        font-size: 28px;
+        white-space: normal;
+    }
+
+    .navBar__info-img img {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+
+    .quote {
+        margin-top: 80px;
+    }
+
+    .top__quote,
+    .bottom__quote {
+        padding: 24px;
+        width: 100%;
+    }
+
+    .top__quote span,
+    .bottom__quote span {
+        font-size: 20px;
+    }
+
+    .bottom__quote {
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    .footer__content {
+        padding: 32px 24px;
+    }
+
+    .footer__content-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer__left,
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__right h3 {
+        margin-bottom: 12px;
+    }
+
+    .footer__content-bottom {
+        margin-top: 20px;
+    }
+
+    .footer__content-bottom span {
+        margin-top: 30px;
+    }
+
+    .projects__content {
+        margin-top: 50px;
+        gap: 32px;
+    }
+
+    .projects__title h2 {
+        font-size: 28px;
+        padding-right: 0;
+    }
+
+    .projects__title h2::after {
+        display: none;
+    }
+
+    .skills__content {
+        margin-top: 60px;
+    }
+
+    .skills__cards-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__card {
+        width: 280px;
+    }
+
+    .aboutMe__title h2 {
+        font-size: 24px;
+    }
+
+    .contacts__details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navBar__info-content h2,
+    .navBar__info-content span {
+        font-size: 24px;
+    }
+
+    .navBar__info-content-subtitle p {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+
+    .top__quote,
+    .bottom__quote {
+        padding: 16px;
+    }
+
+    .top__quote span,
+    .bottom__quote span {
+        font-size: 18px;
+    }
+
+    .footer__content {
+        padding: 24px 16px;
+    }
+
+    .footer__right h3 {
+        font-size: 20px;
+    }
+
+    .footer__left p,
+    .footer__content-bottom span {
+        font-size: 14px;
+    }
+
+    .skills__card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .srow,
+    .trow {
+        width: 100%;
+        align-items: center;
+    }
+
+    .aboutMe__details button {
+        display: none;
+    }
+
+    .aboutMe__details p {
+        max-width: 380px;
+    }
+
+    .skills__decor img {
+        display: none;
+    }
+
+    .burger__menu-content {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .aboutMe__details p,
+    .aboutMe__decor img {
+        max-width: 320px;
+    }
+}
