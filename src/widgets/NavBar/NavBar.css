@@ -110,14 +110,14 @@
 
 .burger {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 24px;
     cursor: pointer;
     z-index: 100;
 }
 
 .burger__list {
-    margin-top: 70px ;
+    margin-top: 70px;
 }
 
 .burger::before,

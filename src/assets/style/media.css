@@ -218,6 +218,10 @@
         align-items: center;
         gap: 20px;
     }
+
+    .burger__menu-content {
+        display: flex;
+    }
 }
 
 @media (max-width: 576px) {
@@ -276,10 +280,6 @@
 
     .skills__decor img {
         display: none;
-    }
-
-    .burger__menu-content {
-        display: block;
     }
 }
 
