@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 import plashka from "../../assets/icons/plashka.png"
 import "./Main.css"
 
-const Projects = () => {
-    const [repos, setRepos] = useState([]);
-
+const Projects = ({ repos, setRepos }) => {
+    
     useEffect(() => {
         axios.get('https://api.github.com/users/blyxzgg/repos')
             .then(response => {
-                const firstThree = response.data.slice(0, 3);
-                setRepos(firstThree);
+                setRepos(response.data);
             })
             .catch(error => {
                 console.error('Ошибка:', error);
@@ -33,7 +31,7 @@ const Projects = () => {
                                 <h3>{repo.name}</h3>
                                 <p>{repo.description || 'Нет описания'}</p>
                                 <a href={repo.html_url} target="_blank">
-                                     To GitHub
+                                    To GitHub
                                 </a>
                             </div>
                         </div>

@@ -5,6 +5,7 @@ import Footer from "./widgets/Footer/Footer";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     if (isOpen) {
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <>
       <NavBar isOpen={isOpen} setIsOpen={setIsOpen} closeMenu={closeMenu} />
-      <Main />
+      <Main repos={repos} setRepos={setRepos} />
       <Footer />
     </>
   )

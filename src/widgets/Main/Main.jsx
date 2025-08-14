@@ -3,10 +3,13 @@ import Contacts from "./Contacts"
 import Projects from "./Projects"
 import Skills from "./Skills"
 
-const Main = () => {
+const Main = ({ repos, setRepos }) => {
     return (
         <>
-            <Projects />
+            <Projects
+                repos={repos}
+                setRepos={setRepos}
+            />
             <Skills />
             <AboutMe />
             <Contacts />
