@@ -3,10 +3,15 @@ import man from "../../assets/icons/man.png"
 import basket from "../../assets/icons/basket.svg"
 import figma from "../../assets/icons/figma.svg"
 import github from "../../assets/icons/github.svg"
+import { useTheme } from "./NavBar"
+export { useTheme } from "../../theme/ThemeContext"
 const NavBar = ({ isOpen, setIsOpen, closeMenu }) => {
     const toggleMenu = () => {
         setIsOpen(prev => !prev);
     };
+
+    const { toggleTheme } = useTheme();
+
     return (
         <header className="header">
             <nav className="nav">
@@ -23,6 +28,10 @@ const NavBar = ({ isOpen, setIsOpen, closeMenu }) => {
                             <a href="https://www.figma.com/files/team/1304584427752362723/all-projects?fuid=1221851373450210944" target="_blank">
                                 <img src={figma} alt="figma" />
                             </a>
+                            <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider" onClick={toggleTheme}></span>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -86,6 +95,12 @@ const NavBar = ({ isOpen, setIsOpen, closeMenu }) => {
                                             <a href="#contacts" onClick={closeMenu}>
                                                 <span>#</span><p>contacts</p>
                                             </a>
+                                        </li>
+                                        <li className="nav__burger-link">
+                                            <label class="switch">
+                                                <input type="checkbox" />
+                                                <span class="slider" onClick={toggleTheme}></span>
+                                            </label>
                                         </li>
                                     </ul>
                                     <ul className="burger__list">

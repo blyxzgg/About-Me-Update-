@@ -1,3 +1,11 @@
+html,
+body,
+*,
+#root {
+    background: var(--bg) !important;
+    transition: background .4s;
+}
+
 :root {
     --primary: #c778dd;
     --gray: #abb2bf;
@@ -5,6 +13,16 @@
     --white: #fff;
     --font-family: "Fira Code", sans-serif;
 }
+
+:root[data-theme="light"] {
+    --bg: #282C33;
+}
+
+:root[data-theme="dark"] {
+    --bg: #586274ff;
+}
+
+/* Эти строки кода добавил gpt так как без него переключение корявое */
 
 body.no-scroll {
     overflow: hidden;
