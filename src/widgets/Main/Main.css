@@ -115,8 +115,8 @@
 }
 
 .card a:hover {
-    background-color: var(--primary);
-    color: var(--background-dark);
+    background-color: var(--primary) !important;
+    color: var(--background-dark) !important;
 }
 
 /* Skills */

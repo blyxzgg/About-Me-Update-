@@ -14,7 +14,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const theme = isDark ? darkTheme : lightTheme;
   const toggleTheme = () => setIsDark(v => !v);
 
-  // ВАЖНО: вешаем признак темы на <html>
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);
