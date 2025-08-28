@@ -11,9 +11,9 @@ const AboutMe = () => {
                     <div className="aboutMe__precise">
                         <div className="aboutMe__details">
                             <p>
-                                Hello, i’m Blyxzgg! <br></br> <br></br>
+                                Hello, i’m Abdulaziz! <br></br> <br></br>
 
-                                I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. <br></br> <br></br>
+                                I’m a front-end developer based in Uzbekistan, Tashkent. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. <br></br> <br></br>
 
                                 Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
                             </p>

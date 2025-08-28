@@ -133,7 +133,7 @@ const NavBar = ({ isOpen, setIsOpen, closeMenu }) => {
                     <div className="navBar__info">
                         <div className="navBar__info-content">
                             <div className="navBar__info-content-title">
-                                <h2>Blyxzgg is a <span>web designer</span> and </h2>
+                                <h2>Abdulaziz is a <span>web designer</span> and </h2>
                                 <span>front-end developer</span>
                             </div>
                             <div className="navBar__info-content-subtitle">

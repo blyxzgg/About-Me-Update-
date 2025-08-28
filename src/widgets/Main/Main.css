@@ -329,7 +329,7 @@
 .contacts__box {
     border: 1px solid var(--gray);
     padding: 16px;
-    width: 204px;
+    width: auto;
     height: 141px;
     display: flex;
     flex-direction: column;
